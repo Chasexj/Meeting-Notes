@@ -17,6 +17,8 @@ Discussion:
    
    2. We need to collect datasets on different locations to verify that our selected sets of feature are indeed working as we claim.
    
-   3. We can show that the set of features extract from certain datasets also scales to additional datasets that may contain different types of services/applications. (but on the same encryption type.)
+   3. Literature review on "why not just retrain"? Some directions to look into: labeling is becoming costly and less feasible. Time cost for retrain. Etc.
    
-   4. Establish a metric for selecting the optimal set of features: how do we rigorously combine f1/accuracy/precision with data drift metrics?
+   4. We can show that the set of features extract from certain datasets also scales to additional datasets that may contain different types of services/applications. (but on the same encryption type.)
+   
+   5. Establish a metric for selecting the optimal set of features: how do we rigorously combine f1/accuracy/precision with data drift metrics?
