@@ -11,5 +11,7 @@ Traffic Classification Discussion:
 2. Training is going to be done in the cloud or off router, do we only care about inferencing costs excluding training?
 
 3. Resource is dominated by encoding and preprocessing, should the inference speed be the aggregation of the entire process from encoding, preprocessing to inferencing?
+   
+   1. Maybe Nprint is ehausting all available resource: verify by experiments on VM and we want to find minimum requirements for different models/features.
 
 Dashboard for censorship: https://github.com/np-tokumei/ML-assisted-DNS-censorship-detection/issues/57
