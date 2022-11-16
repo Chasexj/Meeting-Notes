@@ -14,4 +14,6 @@ Traffic Classification Discussion:
    
    1. Maybe Nprint is ehausting all available resource: verify by experiments on VM and we want to find minimum requirements for different models/features.
 
+4. When system resource is low, preprocessor and model may still work but just very slow, how to we account for this in terms of picking the optimal model?
+
 Dashboard for censorship: https://github.com/np-tokumei/ML-assisted-DNS-censorship-detection/issues/57
