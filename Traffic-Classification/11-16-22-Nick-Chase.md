@@ -17,3 +17,7 @@ Traffic Classification Discussion:
 4. When system resource is low, preprocessor and model may still work but just very slow, how to we account for this in terms of picking the optimal model?
 
 Dashboard for censorship: https://github.com/np-tokumei/ML-assisted-DNS-censorship-detection/issues/57
+
+
+
+Notes from meeting:
