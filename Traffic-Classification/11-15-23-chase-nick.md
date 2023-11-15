@@ -48,8 +48,14 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
 
    **Recent Methods**:
    <img width="500" alt="Screenshot 2023-11-15 at 1 03 25 PM" src="https://github.com/Chasexj/Meeting-Notes/assets/47127634/dae9dc95-bff3-4ae3-a50c-d848543f12e6">
+   *Ambiguity in Natural Language*: The inherent ambiguity of natural language poses significant challenges in accurately interpreting the operator's intent. Although Lumi contains a feedback module this still requires extensive operator-module interactions. Advanced language models like GPT, with their deep understanding of context and semantics, could better handle such ambiguities, leading to more accurate interpretation of intents with fewer operator interactions. *Complexity in Handling Multi-Step Interactions (similar to Ambiguity in Natural Language)*: LUMI's system architecture involves multiple steps like information extraction, intent assembly, and confirmation. A more integrated approach using GPT could streamline these processes, making the system more efficient and user-friendly.
 
+   *Limited Flexibility in Entity Recognition*: LUMI relies on a hierarchical set of entities for information extraction, which may not cover all possible network-related concepts or terms. More importantly, these entities need to be predefined and manually configured. GPT models, with their extensive training on diverse datasets, could potentially recognize a broader range of entities and concepts in an automated fashion through embeddings, offering greater flexibility and accuracy. *Handling of Complex and Varied Expressions (similar to Limited Flexibility in Entity Recognition)*: The system's ability to handle complex and varied natural language expressions may be limited. GPT models, with their advanced language understanding capabilities, could potentially interpret a wider range of expressions and nuances in language more effectively.
+
+   *Dependency on Extensive Training Data*: LUMI's effectiveness depends on the availability of extensive training data for its NER (Named Entity Recognition) module. In contrast, GPT models, pre-trained on vast corpora, require less domain-specific training data to achieve high levels of understanding and accuracy.
+
+   Limited Learning Capabilities from User Feedback: While LUMI learns from operator-provided feedback, its learning mechanism is relatively basic (revised instructions add new key-item pair and retrain NER from scratch). Advanced language models like GPT can incorporate more sophisticated learning algorithms (fine-tuned, contextual understanding, continual learning, etc.), potentially leading to quicker adaptation and improvement based on user interactions.
    
-2. Configuration translation between routing vendors:
+3. Configuration translation between routing vendors:
    
    e.g.,<img width="500" alt="Screenshot 2023-11-15 at 12 19 37 PM" src="https://github.com/Chasexj/Meeting-Notes/assets/47127634/b8f63a60-8fc2-4daa-b63b-bbc3ed2f4aa8">
