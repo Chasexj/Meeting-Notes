@@ -20,8 +20,12 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
 ## Discussion: Is there a better application of LLM to assist routing configurations?
 1. Translation from high-level instruction to explicit configuration changes (motivated by the recent rise in general code generation from GPT):
    
-   e.g., 'create a new IP prefix list NETS that matches all IPs from 10.9.0.0/16: 16-32, and deny all routes to these IPs' -> 'ip prefix-list NETS permit 10.9.0.0/16 le 32; route-map POL deny 10; match ip address NETS'
+   e.g.,
 
-2. Configuration translation between routing vendors:
+   > 'create a new IP prefix list NETS that matches all IPs from 10.9.0.0/16: 16-32, and deny all routes to these IPs'
+   
+   > 'ip prefix-list NETS permit 10.9.0.0/16 le 32; route-map POL deny 10; match ip address NETS'
+
+3. Configuration translation between routing vendors:
    
    e.g.,<img width="500" alt="Screenshot 2023-11-15 at 12 19 37 PM" src="https://github.com/Chasexj/Meeting-Notes/assets/47127634/b8f63a60-8fc2-4daa-b63b-bbc3ed2f4aa8">
