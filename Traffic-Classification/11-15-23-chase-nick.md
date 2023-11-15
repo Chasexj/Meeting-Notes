@@ -45,6 +45,10 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
    *Educational Tool*: Assisting in teaching networking concepts by providing real-time examples of how high-level concepts translate into actual device configurations.
 
    *Misconfiguration Checking*: Given comments in the configuration file, automated verification against intended changes.
+
+   **Recent Methods**:
+   <img width="500" alt="Screenshot 2023-11-15 at 1 03 25 PM" src="https://github.com/Chasexj/Meeting-Notes/assets/47127634/dae9dc95-bff3-4ae3-a50c-d848543f12e6">
+
    
 2. Configuration translation between routing vendors:
    
