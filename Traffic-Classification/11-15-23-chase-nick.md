@@ -30,11 +30,11 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
    
    *Automated Translation*: Developing a system that can accurately translate high-level, often abstract networking instructions into specific configuration commands for different types of network devices (like Cisco, Juniper, etc.).
    
-   *Understanding Context*: Ensuring the system comprehends various networking contexts and applies the correct configuration logic accordingly.
+   *Understanding Context*: Ensuring the system comprehends various networking contexts and applies the correct configuration logic accordingly. Domain knowledge specifically: what are these contexts?
 
    *Cross-Vendor Compatibility*: Addressing the challenge of translating instructions into commands compatible with different vendors' devices, each with their unique syntax and capabilities.
 
-   *Error Handling and Validation*: Implementing robust error handling and validation mechanisms to ensure that generated configurations are not only syntactically correct but also logically sound and safe to deploy.
+   *Error Handling and Validation*: Implementing robust error handling and validation mechanisms to ensure that generated configurations are not only syntactically correct but also logically sound and safe to deploy. Reinforcement learning by validation using misconfiguration detection tools?
 
    **Applications**:
    
