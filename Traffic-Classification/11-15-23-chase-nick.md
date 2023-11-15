@@ -22,10 +22,30 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
    
    e.g.,
 
-   > 'create a new IP prefix list NETS that matches all IPs from 10.9.0.0/16: 16-32, and deny all routes to these IPs'
+   > 'Create a new IP prefix list NETS that matches all IPs from 10.9.0.0/16: 16-32, and deny all routes to these IPs'
    
    > 'ip prefix-list NETS permit 10.9.0.0/16 le 32; route-map POL deny 10; match ip address NETS'
 
-3. Configuration translation between routing vendors:
+   **Challenges**:
+   
+   *Automated Translation*: Developing a system that can accurately translate high-level, often abstract networking instructions into specific configuration commands for different types of network devices (like Cisco, Juniper, etc.).
+   
+   *Understanding Context*: Ensuring the system comprehends various networking contexts and applies the correct configuration logic accordingly.
+
+   *Cross-Vendor Compatibility*: Addressing the challenge of translating instructions into commands compatible with different vendors' devices, each with their unique syntax and capabilities.
+
+   *Error Handling and Validation*: Implementing robust error handling and validation mechanisms to ensure that generated configurations are not only syntactically correct but also logically sound and safe to deploy.
+
+   **Applications**:
+   
+   *Efficiency in Network Management*: Reducing the time and effort required to configure network devices, thereby increasing operational efficiency.
+
+   *Error Reduction*: Minimizing human error in network configuration, leading to more reliable network operations.
+
+   *Educational Tool*: Assisting in teaching networking concepts by providing real-time examples of how high-level concepts translate into actual device configurations.
+
+   *Misconfiguration Checking*: Given comments in the configuration file, automated verification against intended changes.
+   
+2. Configuration translation between routing vendors:
    
    e.g.,<img width="500" alt="Screenshot 2023-11-15 at 12 19 37 PM" src="https://github.com/Chasexj/Meeting-Notes/assets/47127634/b8f63a60-8fc2-4daa-b63b-bbc3ed2f4aa8">
