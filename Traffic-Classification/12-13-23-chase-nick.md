@@ -77,4 +77,5 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
 2. We can show that the LLM can be applied to different vendors: both junipter and cisco, in an automated fashion and produce output accurately.
 
 (1) User Study: Providing manual specification, formal specification, or llm instruction. Metrics (1) user preference, (2) time cost, and (3) accuracy/quality.
+
 (2) Accuracy/quality/completeness of the LLM compared to formal specifications.
