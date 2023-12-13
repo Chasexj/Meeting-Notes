@@ -59,3 +59,22 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
 3. Configuration translation between routing vendors:
    
    e.g.,<img width="500" alt="Screenshot 2023-11-15 at 12 19 37 PM" src="https://github.com/Chasexj/Meeting-Notes/assets/47127634/b8f63a60-8fc2-4daa-b63b-bbc3ed2f4aa8">
+
+## Target Task: Automated New Neighbor BGP Routing Conifiguration via LLM
+
+**Two issues with STOA methods**:
+
+*Tools (1): Ansible, Puppet, Junos...*:
+1. Both manual configuration and templates still require an operator to go in there and fill in the configurations or change the variables, which require the understanding of the context of the configurations which is time consuming and error prone.
+2. Generalizability, different vendors need different templates/tools/syntax, where a LLM can learn this automatically without extensive domain knowledge.
+   
+*Tools (2): CPR, NetComplete, Snowcap, Aura...*:
+1. Still need formal specifications of configurations/policies, then have a hand-written formal model (boolean equations, satisfiability problem) that translate from highly-level policies to low-level configurations.
+2. A bit better generalizability, but need a model to encapsulate semantic of the language.
+
+*What we want to show*:
+1. LLMs are effect in understanding network configuration context and 'accurately' produce configurations, thus avoid the need for manual examination and manual interference in both updating templates or formal models, We can do this by simply mask away the last part of the neighbor configuration and compare the output.
+2. We can show that the LLM can be applied to different vendors: both junipter and cisco, in an automated fashion and produce output accurately.
+
+(1) User Study: Providing manual specification, formal specification, or llm instruction. Metrics (1) user preference, (2) time cost, and (3) accuracy/quality.
+(2) Accuracy/quality/completeness of the LLM compared to formal specifications.
