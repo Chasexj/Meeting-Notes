@@ -74,12 +74,14 @@ Conclusion: this may be a good enough way to detect misconfigurations if the ass
 
 *What we are implementing*:
 1. Fine-tuned an LLM model to a specific network in a Markchov-chained manner. Example training scenario: (1) Router Identifier + New Neighbor IP/Description -> Group Assignment, Import/Export policies; (2) Router Identifier + New Neighbor IP/Description + Group Assignment + Import/Export policies -> Route Map / Access List Assignment; (3) Router Identifier + New Neighbor IP/Description + Group Assignment + Import/Export policies + Route Map / Access List Assignment -> I/E Policy, AL Details; (4) ... til configuration completion.
-2. High-level: (1) Simplistic Input; (2) Comprehensive Output (based on the context of the original configuration file)
-3. How to update the model on the go?
+2. Second training scenario: (1) Router Identifier + New Neighbor IP/Description -> Attempt Auto-completion of Entire Config in one prompt query.
+3. High-level: (1) Simplistic Input; (2) Comprehensive Output (based on the context of the original configuration file)
+4. How to update the model on the go?
+   
 *What we want to show*:
 1. LLMs are effective in understanding network configuration context and 'accurately' produce configurations, thus avoiding the need for manual examination and manual interference in both updating templates or formal models, We can do this by simply masking away the last part of the neighbor configuration and compare the output.
 2. We can show that the LLM can be applied to different vendors: both junipter and Cisco, in an automated fashion and produce output accurately.
 
-(1) User Study: Providing manual specification, formal specification, or LLM instruction. Metrics (1) user preference, (2) time cost, and (3) accuracy/quality.
-
-(2) Accuracy/quality/completeness of the LLM compared to formal specifications.
+*Evaluation Tasks*:
+1. User Study: Providing manual specification, formal specification, or LLM instruction. Metrics (1) user preference, (2) time cost, and (3) accuracy/quality.
+2. Accuracy/quality/completeness of the LLM compared to formal specifications.
